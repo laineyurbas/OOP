@@ -3,12 +3,14 @@ import random
 # The Coin class simulates a coin that can
 # be flipped.
 
+
 class Coin:
     # The _ _init_ _ method initializes the
     # sideup data attribute with 'Heads'.
+    # use init every time an object is created from a class
 
     def __init__(self):
-        self.sideup = 'Heads'
+        self.sideup = 'Heads'  # need this line to show which side is heads in the first place
 
     # The toss method generates a random number
     # in the range of 0 through 1. If the number
@@ -25,4 +27,7 @@ class Coin:
     # referenced by sideup.
 
     def get_sideup(self):
-            return self.sideup
+        return self.sideup
+# you have seperate methods because it needs to check
+# every time
+# accsesor methods = simple return an attribute (also known as get methods)
